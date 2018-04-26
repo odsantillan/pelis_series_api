@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/resultadoAnimo', 'estadosDP@verEstado')->name('resultadoAnimo');
+
+Route::get('/', function(){
+  return view('ingreso');
+})->name('ingreso');
